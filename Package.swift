@@ -15,10 +15,10 @@ let package = Package(
             dependencies: ["NMapsMap", "NMapsGeometry"]),
         .binaryTarget(
             name: "NMapsMap",
-            path: "FrameWork/NMapsMap/framework/NMapsMap.xcframework"),
+            path: "FrameWork/NMapsMap.framework/NMapsMap.xcframework"), // .framework 제거
         .binaryTarget(
             name: "NMapsGeometry",
-            path: "FrameWork/NMapsGeometry/framework/NMapsGeometry.xcframework"),
+            path: "FrameWork/NMapsGeometry.framework/NMapsGeometry.xcframework"), // .framework 제거
         .testTarget(
             name: "NMapTests",
             dependencies: ["NMap"])
